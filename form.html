@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple HTML Form with CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Project Information</h1>
+      <form>
+        <label for="clientName">3. Client Name<span class="required">*</span></label>
+        <input type="text" id="clientName" name="clientName" required>
+
+        <label for="clientLocation">4. Client Location</label>
+        <input type="text" id="clientLocation" name="clientLocation">
+
+        <label for="projectName">5. Project Name</label>
+        <input type="text" id="projectName" name="projectName">
+
+        <label for="projectType">6. Type of Project</label>
+        <label class="radio-container">Support & Operations
+          <input type="radio" id="projectType1" name="projectType" value="Support & Operations">
+          <span class="checkmark"></span>
+        </label>
+        <label class="radio-container">Development
+          <input type="radio" id="projectType2" name="projectType" value="Development">
+          <span class="checkmark"></span>
+        </label>
+
+        <label for="projectDuration">7. Duration of Project</label>
+        <select id="projectDuration" name="projectDuration">
+          <option value="">> 3 Months & < 6 Months</option>
+          <option value="1">1 Month</option>
+          <option value="2">2 Months</option>
+          <option value="3">3 Months</option>
+          <option value="4">4 Months</option>
+          <option value="5">5 Months</option>
+          <option value="6">6 Months</option>
+          <option value="7">7 Months</option>
+          <option value="8">8 Months</option>
+          <option value="9">9 Months</option>
+          <option value="10">10 Months</option>
+          <option value="11">11 Months</option>
+          <option value="12">12 Months</option>
+        </select>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
